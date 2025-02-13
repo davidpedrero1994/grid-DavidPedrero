@@ -10,33 +10,33 @@
 }
 
 main {
-  max-width: 900px; /* Establece un ancho máximo de 900px para el elemento principal. */
-  padding: 1rem; /* Añade un relleno interno de 1rem. */
-  margin: 0 auto; /* Centra el elemento principal horizontalmente. */
-  display: grid; /* Utiliza el sistema de diseño de cuadrícula (grid). */
-  grid-template-columns: 300px 300px 300px; /* Define una cuadrícula con cuatro columnas, cada una de 200px de ancho. */
-  grid-template-rows: 180px 180px 180px; /* Define una cuadrícula con tres filas, cada una de 200px de alto. */
-  grid-gap: 1rem; /* Añade un espacio (gap) de 1rem entre las celdas de la cuadrícula. */
+  max-width: 900px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 180px 180px 180px;
+  grid-gap: 1rem;
 }
 
 img {
-  object-fit: cover; /* Asegura que la imagen cubra toda el área de su contenedor. */
-  width: 100%; /* Establece el ancho de la imagen al 100% del contenedor. */
-  height: 100%; /* Establece la altura de la imagen al 100% del contenedor. */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .Training {
   grid-row: 1 / 3;
-  grid-column: 1 / 2; /* La celda abarca desde la fila 1 hasta la fila 3. */
+  grid-column: 1 / 2;
 }
 
 .school {
-  grid-row: 1 / 1; /* La celda abarca desde la columna 3 hasta la columna 5. */
+  grid-row: 1 / 1;
   grid-column: 2 / 3;
 }
 
 .student {
-  grid-row: 1 / 1; /* La celda abarca desde la fila 2 hasta la fila 4. */
+  grid-row: 1 / 1;
   grid-column: 3 / 4;
 }
 
@@ -48,18 +48,18 @@ img {
 }
 
 .time {
-  grid-row: 2 / 3; /* La celda abarca desde la columna 3 hasta la columna 5. */
+  grid-row: 2 / 3;
   grid-column: 3 / 4;
 }
 
 .alumni {
   grid-row: 3 / 4;
-  grid-column: 1 / 2; /* La celda abarca desde la columna 3 hasta la columna 5. */
+  grid-column: 1 / 2;
 }
 
 .Morbi {
   grid-row: 3 / 4;
-  grid-column: 2 / 4; /* La celda abarca desde la columna 3 hasta la columna 5. */
+  grid-column: 2 / 4;
 }
 
 .Training {
@@ -91,11 +91,11 @@ img {
 }
 .Morbi h3 {
   color: white;
-  margin: 1rem; /* Elimina cualquier margen que pueda afectar el centrado vertical */
+  margin: 1rem;
 }
 
 .Morbi p {
-  margin: 1rem; /* Añade un margen vertical entre el título y el botón */
+  margin: 1rem;
 }
 
 .Morbi button {
@@ -108,11 +108,10 @@ img {
   margin: 1rem;
 }
 
-/* Media Query para pantallas pequeñas */
-@media (max-width: 600px) {
+@media (max-width: 964px) {
   main {
-    grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
-    grid-template-rows: auto; /* Ajusta la altura de las filas automáticamente */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   .Training,
@@ -122,8 +121,8 @@ img {
   .time,
   .alumni,
   .Morbi {
-    grid-column: 1 / -1; /* Abarca toda la única columna */
-    grid-row: auto; /* Permite que cada div ocupe una fila independiente */
+    grid-column: 1 / -1;
+    grid-row: auto;
   }
   .education h2 {
     margin-top: 4%;
